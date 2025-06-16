@@ -1,0 +1,12 @@
+# This is an example wrangler.toml file.
+# Copy this to wrangler.toml and fill in your own details.
+
+name = "your-worker-name"
+main = "worker.ts"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# Optional: Add your custom domain route here
+# [[routes]]
+# pattern = "your.domain.com/path/*"
+# zone_name = "your.domain.com"

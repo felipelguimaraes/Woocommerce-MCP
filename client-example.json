@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "woocommerce-remote-http": {
+      "url": "http://localhost:3000/mcp",
+      "disabled": false,
+      "description": "Connects to the persistent, stateful server. Requires credentials in params.",
+      "params": {
+        "credentials": {
+          "url": "YOUR_WOOCOMMERCE_STORE_URL",
+          "key": "YOUR_WOOCOMMERCE_API_KEY",
+          "secret": "YOUR_WOOCOMMERCE_API_SECRET"
+        }
+      }
+    },
+    "woocommerce-local-stdio": {
+      "command": "bun",
+      "args": [
+        "dev"
+      ],
+      "cwd": "e:/NODE PROJECTS/Woocommerce MCP",
+      "disabled": true,
+      "description": "Starts a new server instance for local development. Uses the env block for credentials.",
+      "env": {
+        "WC_URL": "https://cets.com.br",
+        "WC_CONSUMER_KEY": "ck_eb179f40b9e3162cda653b5d51da1417f8897804",
+        "WC_CONSUMER_SECRET": "cs_7db89075fdaf76fa79c18a089d06edad352b32f1"
+      }
+    }
+  }
+}
